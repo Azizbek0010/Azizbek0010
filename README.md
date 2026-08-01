@@ -79,7 +79,7 @@ reads this month against the last one, in Tashkent time rather than the server's
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="45" height="45">&nbsp;&nbsp;
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" alt="Redis" width="45" height="45">&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/socketdotio/DFE9EC" alt="Socket.io" width="45" height="45">&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/amazons3/E9542E" alt="Amazon S3" width="45" height="45">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS S3" width="45" height="45">
 </p>
 
 <h4 align="center">Mobile</h4>
