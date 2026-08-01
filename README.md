@@ -24,7 +24,7 @@
 - **Operations tooling** — photo-backed audit trails, reconciliation, reports in local time
 - **Mobile with React Native** — for the people who work away from a desk
 
-<img src="./receipts.svg" width="100%" alt="371 commits authored, 145,291 lines added, 14 developers led, 7 roles shipped">
+<img src="./receipts.gif" width="100%" alt="371 commits authored, 145,291 lines added, 14 developers led, 7 roles shipped">
 
 ## Selected work
 
@@ -52,7 +52,7 @@ reads this month against the last one, in Tashkent time rather than the server's
 
 ## Stack
 
-<img src="./stack.svg" width="100%" alt="Stack grouped by layer: interface, server, data, mobile, ship and run">
+<img src="./stack.gif" width="100%" alt="Stack grouped by layer: interface, server, data, mobile, ship and run">
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="38">&nbsp;&nbsp;
