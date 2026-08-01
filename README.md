@@ -115,8 +115,16 @@ Everything above is in something already deployed — not a list of things I hav
 
 ## Connect
 
-**Portfolio** — [azizbek0010.github.io/portfolio](https://azizbek0010.github.io/portfolio/)
-**Telegram** — [@Azizbek2603](https://t.me/Azizbek2603)
-**Email** — [amangeldiev.azizbek.010@gmail.com](mailto:amangeldiev.azizbek.010@gmail.com)
+<p align="center">
+  <a href="https://azizbek0010.github.io/portfolio/"><img src="https://img.shields.io/badge/Portfolio-azizbek0010.github.io-101C25?style=for-the-badge&logo=githubpages&logoColor=48CFC6&labelColor=0A1219" alt="Portfolio azizbek0010.github.io"></a>
+  <a href="https://github.com/Azizbek0010"><img src="https://img.shields.io/badge/GitHub-Azizbek0010-101C25?style=for-the-badge&logo=github&logoColor=DFE9EC&labelColor=0A1219" alt="GitHub Azizbek0010"></a>
+  <a href="https://t.me/Azizbek2603"><img src="https://img.shields.io/badge/Telegram-@Azizbek2603-101C25?style=for-the-badge&logo=telegram&logoColor=26A5E4&labelColor=0A1219" alt="Telegram @Azizbek2603"></a>
+</p>
 
-Tashkent, Uzbekistan. Open to freelance work.
+<p align="center">
+  <a href="mailto:amangeldiev.azizbek.010@gmail.com"><img src="https://img.shields.io/badge/Gmail-amangeldiev.azizbek.010-101C25?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=0A1219" alt="Gmail amangeldiev.azizbek.010"></a>
+  <a href="https://levelup-academy.uz"><img src="https://img.shields.io/badge/Live%20product-levelup--academy.uz-101C25?style=for-the-badge&logo=rocket&logoColor=48CFC6&labelColor=0A1219" alt="Live product levelup-academy.uz"></a>
+  <a href="https://www.instagram.com/levelup_academy_uz/"><img src="https://img.shields.io/badge/Instagram-levelup__academy__uz-101C25?style=for-the-badge&logo=instagram&logoColor=E4405F&labelColor=0A1219" alt="Instagram levelup_academy_uz"></a>
+</p>
+
+Tashkent, Uzbekistan. Open to freelance work — Telegram is the fastest way to reach me.
