@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="178" viewBox="0 0 1200 178" role="img" aria-label="371 commits, 145291 lines added, 14 developers led, 7 roles shipped">
+  <title>Measured from git, 9 July – 1 August 2026</title>
+  <defs>
+    <clipPath id="b"><rect width="1200" height="178" rx="14"/></clipPath>
+    <linearGradient id="scan" x1="0" x2="1">
+      <stop offset="0%" stop-color="#48CFC6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#48CFC6" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#48CFC6" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .scan { animation: scan 6s ease-in-out infinite; }
+      @keyframes scan { 0% { transform: translateX(-320px) } 60%,100% { transform: translateX(1240px) } }
+      @media (prefers-reduced-motion: reduce) { .scan { animation: none } }
+    </style>
+  </defs>
+  <g clip-path="url(#b)">
+    <rect width="1200" height="178" rx="14" fill="#0A1219"/>
+    <rect class="scan" x="-320" y="0" width="300" height="2" fill="url(#scan)"/>
+    <text x="34" y="34" font-family="ui-monospace,Consolas,monospace" font-size="11"
+          letter-spacing="2.4" fill="#5E7480">MEASURED FROM GIT  ·  LEVELUP ACADEMY  ·  9 JULY – 1 AUGUST 2026</text>
+    <text x="34.0" y="94" font-family="Georgia,'Times New Roman',serif" font-size="46" fill="#48CFC6">371</text><text x="34.0" y="122" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2.1" fill="#5E7480">COMMITS AUTHORED</text><text x="34.0" y="144" font-family="system-ui,Segoe UI,sans-serif" font-size="12.5" fill="#93A9B3">roughly 15 a day, 24 days straight</text>
+    <rect x="301.0" y="34" width="1" height="110" fill="#22333F"/>
+    <text x="317.0" y="94" font-family="Georgia,'Times New Roman',serif" font-size="46" fill="#48CFC6">145,291</text><text x="317.0" y="122" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2.1" fill="#5E7480">LINES ADDED</text><text x="317.0" y="144" font-family="system-ui,Segoe UI,sans-serif" font-size="12.5" fill="#93A9B3">102,308 removed — rewriting counts</text>
+    <rect x="584.0" y="34" width="1" height="110" fill="#22333F"/>
+    <text x="600.0" y="94" font-family="Georgia,'Times New Roman',serif" font-size="46" fill="#48CFC6">14</text><text x="600.0" y="122" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2.1" fill="#5E7480">DEVELOPERS LED</text><text x="600.0" y="144" font-family="system-ui,Segoe UI,sans-serif" font-size="12.5" fill="#93A9B3">branches reviewed and merged</text>
+    <rect x="867.0" y="34" width="1" height="110" fill="#22333F"/>
+    <text x="883.0" y="94" font-family="Georgia,'Times New Roman',serif" font-size="46" fill="#48CFC6">7</text><text x="883.0" y="122" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2.1" fill="#5E7480">ROLES SHIPPED</text><text x="883.0" y="144" font-family="system-ui,Segoe UI,sans-serif" font-size="12.5" fill="#93A9B3">each with its own panel</text>
+    <rect x=".5" y=".5" width="1199" height="177" rx="13.5" fill="none" stroke="#22333F"/>
+  </g>
+</svg>
