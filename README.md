@@ -1,6 +1,6 @@
-<img src="./banner.svg" width="100%" alt="Azizbek Amangeldiev — full-stack developer building systems that go into daily use">
+<img src="./banner.gif" width="100%" alt="Azizbek Amangeldiev — full-stack developer building systems that go into daily use">
 
-<img src="./now.svg" width="100%" alt="Now: LevelUp Academy v1, secure payments. 14 developers led. Open to freelance work in Tashkent.">
+<img src="./now.gif" width="100%" alt="Now: LevelUp Academy v1, secure payments. 14 developers led. Open to freelance work in Tashkent.">
 
 <p align="center">
   <a href="https://azizbek0010.github.io/portfolio/"><img src="https://img.shields.io/badge/Portfolio-azizbek0010.github.io-48CFC6?style=flat-square&labelColor=0A1219" alt="Portfolio"></a>
