@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="52" viewBox="0 0 1200 52" role="img" aria-label="Now shipping LevelUp Academy v1 secure payments; 14 developers; open to freelance work">
+  <title>What I am on right now</title>
+  <defs>
+    <clipPath id="c"><rect width="1200" height="52" rx="10"/></clipPath>
+    <linearGradient id="edge" x1="0" x2="1">
+      <stop offset="0" stop-color="#0A1219"/>
+      <stop offset="1" stop-color="#0A1219" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .run { animation: run 34s linear infinite; }
+      @keyframes run { from { transform: translateX(0) } to { transform: translateX(-1677px) } }
+      @media (prefers-reduced-motion: reduce) { .run { animation: none } }
+    </style>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="1200" height="52" rx="10" fill="#0A1219"/>
+    <g class="run" transform="translate(64,0)">
+      <g transform="translate(0.0,0)"><text x="0.0" y="32" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2.2" fill="#48CFC6">NOW</text><text x="40.8" y="32" font-family="system-ui,Segoe UI,sans-serif" font-size="13.5" fill="#93A9B3">LevelUp Academy v1 — secure payments, cash and card</text><circle cx="403.4" cy="27" r="2" fill="#5E7480"/><text x="429.4" y="32" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2.2" fill="#48CFC6">TEAM</text><text x="477.8" y="32" font-family="system-ui,Segoe UI,sans-serif" font-size="13.5" fill="#93A9B3">14 developers, branches reviewed and merged by hand</text><circle cx="840.4" cy="27" r="2" fill="#5E7480"/><text x="866.4" y="32" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2.2" fill="#48CFC6">LIVE</text><text x="914.8" y="32" font-family="system-ui,Segoe UI,sans-serif" font-size="13.5" fill="#93A9B3">levelup-academy.uz · azizbek0010.github.io/portfolio</text><circle cx="1284.0" cy="27" r="2" fill="#5E7480"/><text x="1310.0" y="32" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2.2" fill="#48CFC6">OPEN TO</text><text x="1381.2" y="32" font-family="system-ui,Segoe UI,sans-serif" font-size="13.5" fill="#93A9B3">freelance work — Tashkent, Uzbekistan</text><circle cx="1651.4" cy="27" r="2" fill="#5E7480"/></g>
+      <g transform="translate(1677.4,0)"><text x="0.0" y="32" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2.2" fill="#48CFC6">NOW</text><text x="40.8" y="32" font-family="system-ui,Segoe UI,sans-serif" font-size="13.5" fill="#93A9B3">LevelUp Academy v1 — secure payments, cash and card</text><circle cx="403.4" cy="27" r="2" fill="#5E7480"/><text x="429.4" y="32" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2.2" fill="#48CFC6">TEAM</text><text x="477.8" y="32" font-family="system-ui,Segoe UI,sans-serif" font-size="13.5" fill="#93A9B3">14 developers, branches reviewed and merged by hand</text><circle cx="840.4" cy="27" r="2" fill="#5E7480"/><text x="866.4" y="32" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2.2" fill="#48CFC6">LIVE</text><text x="914.8" y="32" font-family="system-ui,Segoe UI,sans-serif" font-size="13.5" fill="#93A9B3">levelup-academy.uz · azizbek0010.github.io/portfolio</text><circle cx="1284.0" cy="27" r="2" fill="#5E7480"/><text x="1310.0" y="32" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2.2" fill="#48CFC6">OPEN TO</text><text x="1381.2" y="32" font-family="system-ui,Segoe UI,sans-serif" font-size="13.5" fill="#93A9B3">freelance work — Tashkent, Uzbekistan</text><circle cx="1651.4" cy="27" r="2" fill="#5E7480"/></g>
+    </g>
+    <rect x="0" y="0" width="30" height="52" fill="url(#edge)"/>
+    <rect x="1199" y=".5" width="0" height="0" fill="none"/>
+    <rect x=".5" y=".5" width="1199" height="51" rx="9.5" fill="none" stroke="#22333F"/>
+  </g>
+</svg>

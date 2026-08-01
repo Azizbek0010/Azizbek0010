@@ -7,19 +7,57 @@
       <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
     </radialGradient>
     <mask id="soft"><rect width="1200" height="300" fill="url(#fade)"/></mask>
+
+    <!-- Sheen over the name. Parked off to the left, so a frozen renderer
+         still paints plain ink rather than a half-lit word. -->
+    <linearGradient id="sheen" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="420" y2="0">
+      <stop offset="0" stop-color="#DFE9EC"/>
+      <stop offset=".42" stop-color="#DFE9EC"/>
+      <stop offset=".5" stop-color="#8FE6DF"/>
+      <stop offset=".58" stop-color="#DFE9EC"/>
+      <stop offset="1" stop-color="#DFE9EC"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        from="-520 0" to="1320 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="sheen2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="420" y2="0">
+      <stop offset="0" stop-color="#93A9B3"/>
+      <stop offset=".42" stop-color="#93A9B3"/>
+      <stop offset=".5" stop-color="#8FE6DF"/>
+      <stop offset=".58" stop-color="#93A9B3"/>
+      <stop offset="1" stop-color="#93A9B3"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        from="-520 0" to="1320 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="glaze" x1="0" x2="1">
+      <stop offset="0%" stop-color="#48CFC6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#48CFC6" stop-opacity=".07"/>
+      <stop offset="100%" stop-color="#48CFC6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rule" gradientUnits="userSpaceOnUse" x1="60" y1="0" x2="1140" y2="0">
+      <stop offset="0" stop-color="#48CFC6" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#22333F" stop-opacity="1"/>
+    </linearGradient>
+
     <style>
       .drift { animation: drift 30s linear infinite; }
       @keyframes drift { to { transform: translate(94.0px, 82.4px); } }
       .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: 64px 62px; }
       @keyframes pulse { 0%,100% { opacity:1; transform:scale(1) } 50% { opacity:.3; transform:scale(1.6) } }
-      @media (prefers-reduced-motion: reduce) { .drift,.pulse { animation: none } }
+      .tw { animation: tw 5.5s ease-in-out infinite; opacity:.18; }
+      @keyframes tw { 0%,100% { opacity:.12 } 50% { opacity:.62 } }
+      .glaze { animation: glaze 9s ease-in-out infinite; }
+      @keyframes glaze { 0% { transform: translateX(-560px) } 60%,100% { transform: translateX(1200px) } }
+      @media (prefers-reduced-motion: reduce) {
+        .drift,.pulse,.tw,.glaze { animation: none }
+      }
     </style>
   </defs>
 
   <g clip-path="url(#card)">
     <rect width="1200" height="300" fill="#0A1219"/>
-    <g mask="url(#soft)" fill="none" stroke="#48CFC6" stroke-opacity=".17" stroke-width="1">
-      <g class="drift">
+    <g mask="url(#soft)">
+      <g fill="none" stroke="#48CFC6" stroke-opacity=".17" stroke-width="1">
+        <g class="drift">
         <path d="M-36.0,-82.4L-111.9,-27.2L-140.9,-116.5L-47.0,-116.5L-76.0,-27.2L-152.0,-82.4L-76.0,-137.5L-47.0,-48.3L-140.9,-48.3L-111.9,-137.5L-36.0,-82.4 M-65.0,-82.4L-70.5,-65.3L-85.0,-54.8L-102.9,-54.8L-117.4,-65.3L-123.0,-82.4L-117.4,-99.4L-102.9,-109.9L-85.0,-109.9L-70.5,-99.4L-65.0,-82.4Z"/>
         <path d="M58.0,-82.4L-17.9,-27.2L-46.9,-116.5L46.9,-116.5L17.9,-27.2L-58.0,-82.4L17.9,-137.5L46.9,-48.3L-46.9,-48.3L-17.9,-137.5L58.0,-82.4 M29.0,-82.4L23.5,-65.3L9.0,-54.8L-9.0,-54.8L-23.5,-65.3L-29.0,-82.4L-23.5,-99.4L-9.0,-109.9L9.0,-109.9L23.5,-99.4L29.0,-82.4Z"/>
         <path d="M152.0,-82.4L76.0,-27.2L47.0,-116.5L140.9,-116.5L111.9,-27.2L36.0,-82.4L111.9,-137.5L140.9,-48.3L47.0,-48.3L76.0,-137.5L152.0,-82.4 M123.0,-82.4L117.4,-65.3L102.9,-54.8L85.0,-54.8L70.5,-65.3L65.0,-82.4L70.5,-99.4L85.0,-109.9L102.9,-109.9L117.4,-99.4L123.0,-82.4Z"/>
@@ -110,23 +148,34 @@
         <path d="M1138.5,329.4L1062.6,384.6L1033.6,295.3L1127.5,295.3L1098.5,384.6L1022.5,329.4L1098.5,274.3L1127.5,363.5L1033.6,363.5L1062.6,274.3L1138.5,329.4 M1109.5,329.4L1104.0,346.5L1089.5,357.0L1071.6,357.0L1057.1,346.5L1051.5,329.4L1057.1,312.4L1071.6,301.9L1089.5,301.9L1104.0,312.4L1109.5,329.4Z"/>
         <path d="M1232.5,329.4L1156.6,384.6L1127.6,295.3L1221.4,295.3L1192.4,384.6L1116.5,329.4L1192.4,274.3L1221.4,363.5L1127.6,363.5L1156.6,274.3L1232.5,329.4 M1203.5,329.4L1198.0,346.5L1183.5,357.0L1165.5,357.0L1151.0,346.5L1145.5,329.4L1151.0,312.4L1165.5,301.9L1183.5,301.9L1198.0,312.4L1203.5,329.4Z"/>
         <path d="M1326.5,329.4L1250.5,384.6L1221.5,295.3L1315.4,295.3L1286.4,384.6L1210.5,329.4L1286.4,274.3L1315.4,363.5L1221.5,363.5L1250.5,274.3L1326.5,329.4 M1297.5,329.4L1291.9,346.5L1277.4,357.0L1259.5,357.0L1245.0,346.5L1239.5,329.4L1245.0,312.4L1259.5,301.9L1277.4,301.9L1291.9,312.4L1297.5,329.4Z"/>
+        </g>
       </g>
+      <circle cx="751.7" cy="82.4" r="2.6" fill="#48CFC6" class="tw" style="animation-delay:0.0s"/>
+      <circle cx="187.9" cy="247.1" r="2.6" fill="#48CFC6" class="tw" style="animation-delay:0.9s"/>
+      <circle cx="375.8" cy="247.1" r="2.6" fill="#48CFC6" class="tw" style="animation-delay:1.8s"/>
+      <circle cx="939.6" cy="247.1" r="2.6" fill="#48CFC6" class="tw" style="animation-delay:2.7s"/>
+      <circle cx="469.8" cy="82.4" r="2.6" fill="#48CFC6" class="tw" style="animation-delay:3.6s"/>
+      <circle cx="1033.6" cy="82.4" r="2.6" fill="#48CFC6" class="tw" style="animation-delay:4.5s"/>
+      <circle cx="563.8" cy="82.4" r="2.6" fill="#48CFC6" class="tw" style="animation-delay:5.4s"/>
+      <circle cx="516.8" cy="164.7" r="2.6" fill="#48CFC6" class="tw" style="animation-delay:6.3s"/>
+      <circle cx="845.6" cy="247.1" r="2.6" fill="#48CFC6" class="tw" style="animation-delay:7.2s"/>
     </g>
 
     <circle class="pulse" cx="64" cy="62" r="4.5" fill="#48CFC6"/>
     <text x="80" y="67" font-family="ui-monospace,Consolas,monospace" font-size="12.5"
           letter-spacing="2.6" fill="#48CFC6">AVAILABLE FOR FREELANCE</text>
 
-    <text x="60" y="150" font-family="Georgia,'Times New Roman',serif" font-size="62" fill="#DFE9EC">Azizbek</text>
+    <text x="60" y="150" font-family="Georgia,'Times New Roman',serif" font-size="62" fill="url(#sheen)">Azizbek</text>
     <text x="292" y="150" font-family="Georgia,'Times New Roman',serif" font-size="62"
-          font-style="italic" fill="#93A9B3">Amangeldiev</text>
+          font-style="italic" fill="url(#sheen2)">Amangeldiev</text>
 
-    <rect x="60" y="176" width="1080" height="1" fill="#22333F"/>
+    <rect x="60" y="176" width="1080" height="1" fill="url(#rule)"/>
 
     <text x="60" y="213" font-family="system-ui,Segoe UI,sans-serif" font-size="18" fill="#93A9B3">I build systems that go into daily use — multi-tenant CRMs, payment flows, operations tooling.</text>
     <text x="60" y="252" font-family="ui-monospace,Consolas,monospace" font-size="12.5"
           letter-spacing="2.2" fill="#5E7480">NODE.JS  ·  POSTGRESQL  ·  REACT  ·  REDIS  ·  REACT NATIVE  ·  TASHKENT</text>
 
+    <rect class="glaze" x="-560" y="0" width="520" height="300" fill="url(#glaze)"/>
     <rect x=".5" y=".5" width="1199" height="299" rx="13.5" fill="none" stroke="#22333F"/>
   </g>
 </svg>

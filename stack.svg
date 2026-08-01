@@ -4,47 +4,49 @@
     <clipPath id="box"><rect width="1200" height="284" rx="14"/></clipPath>
     <linearGradient id="glaze" x1="0" x2="1">
       <stop offset="0%" stop-color="#48CFC6" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#48CFC6" stop-opacity=".12"/>
+      <stop offset="50%" stop-color="#48CFC6" stop-opacity=".13"/>
       <stop offset="100%" stop-color="#48CFC6" stop-opacity="0"/>
     </linearGradient>
     <style>
       .sweep { animation: sweep 7s ease-in-out infinite; }
       @keyframes sweep { 0% { transform: translateX(-460px) } 55%,100% { transform: translateX(1240px) } }
-      @media (prefers-reduced-motion: reduce) { .sweep { animation: none } }
+      .chip { animation: breathe 4.5s ease-in-out infinite; }
+      @keyframes breathe { 0%,100% { opacity:1 } 50% { opacity:.72 } }
+      @media (prefers-reduced-motion: reduce) { .sweep,.chip { animation: none } }
     </style>
   </defs>
   <g clip-path="url(#box)">
     <rect width="1200" height="284" rx="14" fill="#0A1219"/>
     <text x="34" y="60" font-family="ui-monospace,Consolas,monospace" font-size="11.5" letter-spacing="2.2" fill="#5E7480">INTERFACE</text>
-    <rect x="190.0" y="40" width="62.8" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="203.0" y="60" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">React</text>
-    <rect x="260.8" y="40" width="55.4" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="273.8" y="60" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Vite</text>
-    <rect x="324.1" y="40" width="114.2" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="337.1" y="60" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Tailwind CSS</text>
-    <rect x="446.3" y="40" width="77.4" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="459.3" y="60" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">DaisyUI</text>
-    <rect x="531.8" y="40" width="128.9" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="544.8" y="60" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">TanStack Query</text>
-    <rect x="668.7" y="40" width="77.4" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="681.7" y="60" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Zustand</text>
+    <g class="chip" style="animation-delay:0.00s"><rect x="190.0" y="40" width="62.8" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="203.0" y="60" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">React</text>
+    <g class="chip" style="animation-delay:0.28s"><rect x="260.8" y="40" width="55.4" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="273.8" y="60" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Vite</text>
+    <g class="chip" style="animation-delay:0.56s"><rect x="324.1" y="40" width="114.2" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="337.1" y="60" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Tailwind CSS</text>
+    <g class="chip" style="animation-delay:0.84s"><rect x="446.3" y="40" width="77.4" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="459.3" y="60" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">DaisyUI</text>
+    <g class="chip" style="animation-delay:1.12s"><rect x="531.8" y="40" width="128.9" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="544.8" y="60" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">TanStack Query</text>
+    <g class="chip" style="animation-delay:1.40s"><rect x="668.7" y="40" width="77.4" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="681.7" y="60" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Zustand</text>
     <text x="34" y="106" font-family="ui-monospace,Consolas,monospace" font-size="11.5" letter-spacing="2.2" fill="#5E7480">SERVER</text>
-    <rect x="190.0" y="86" width="77.4" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="203.0" y="106" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Node.js</text>
-    <rect x="275.4" y="86" width="77.4" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="288.4" y="106" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Express</text>
-    <rect x="360.9" y="86" width="55.4" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="373.9" y="106" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">REST</text>
-    <rect x="424.3" y="86" width="84.8" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="437.3" y="106" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">JWT auth</text>
-    <rect x="517.1" y="86" width="92.1" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="530.1" y="106" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Socket.io</text>
-    <rect x="617.2" y="86" width="70.1" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="630.2" y="106" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">BullMQ</text>
+    <g class="chip" style="animation-delay:1.68s"><rect x="190.0" y="86" width="77.4" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="203.0" y="106" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Node.js</text>
+    <g class="chip" style="animation-delay:1.96s"><rect x="275.4" y="86" width="77.4" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="288.4" y="106" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Express</text>
+    <g class="chip" style="animation-delay:2.24s"><rect x="360.9" y="86" width="55.4" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="373.9" y="106" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">REST</text>
+    <g class="chip" style="animation-delay:2.52s"><rect x="424.3" y="86" width="84.8" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="437.3" y="106" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">JWT auth</text>
+    <g class="chip" style="animation-delay:2.80s"><rect x="517.1" y="86" width="92.1" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="530.1" y="106" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Socket.io</text>
+    <g class="chip" style="animation-delay:3.08s"><rect x="617.2" y="86" width="70.1" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="630.2" y="106" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">BullMQ</text>
     <text x="34" y="152" font-family="ui-monospace,Consolas,monospace" font-size="11.5" letter-spacing="2.2" fill="#5E7480">DATA</text>
-    <rect x="190.0" y="132" width="99.5" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="203.0" y="152" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">PostgreSQL</text>
-    <rect x="297.5" y="132" width="77.4" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="310.5" y="152" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">MongoDB</text>
-    <rect x="382.9" y="132" width="62.8" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="395.9" y="152" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Redis</text>
-    <rect x="453.7" y="132" width="99.5" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="466.7" y="152" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Migrations</text>
-    <rect x="561.2" y="132" width="99.5" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="574.2" y="152" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">S3 / MinIO</text>
+    <g class="chip" style="animation-delay:3.36s"><rect x="190.0" y="132" width="99.5" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="203.0" y="152" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">PostgreSQL</text>
+    <g class="chip" style="animation-delay:3.64s"><rect x="297.5" y="132" width="77.4" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="310.5" y="152" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">MongoDB</text>
+    <g class="chip" style="animation-delay:3.92s"><rect x="382.9" y="132" width="62.8" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="395.9" y="152" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Redis</text>
+    <g class="chip" style="animation-delay:4.20s"><rect x="453.7" y="132" width="99.5" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="466.7" y="152" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Migrations</text>
+    <g class="chip" style="animation-delay:4.48s"><rect x="561.2" y="132" width="99.5" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="574.2" y="152" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">S3 / MinIO</text>
     <text x="34" y="198" font-family="ui-monospace,Consolas,monospace" font-size="11.5" letter-spacing="2.2" fill="#5E7480">MOBILE</text>
-    <rect x="190.0" y="178" width="114.2" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="203.0" y="198" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">React Native</text>
-    <rect x="312.2" y="178" width="55.4" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="325.2" y="198" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Expo</text>
+    <g class="chip" style="animation-delay:4.76s"><rect x="190.0" y="178" width="114.2" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="203.0" y="198" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">React Native</text>
+    <g class="chip" style="animation-delay:5.04s"><rect x="312.2" y="178" width="55.4" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="325.2" y="198" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Expo</text>
     <text x="34" y="244" font-family="ui-monospace,Consolas,monospace" font-size="11.5" letter-spacing="2.2" fill="#5E7480">SHIP &amp; RUN</text>
-    <rect x="190.0" y="224" width="48.0" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="203.0" y="244" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Git</text>
-    <rect x="246.1" y="224" width="70.1" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="259.1" y="244" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Docker</text>
-    <rect x="324.1" y="224" width="70.1" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="337.1" y="244" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Render</text>
-    <rect x="402.2" y="224" width="70.1" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="415.2" y="244" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Vercel</text>
-    <rect x="480.4" y="224" width="55.4" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="493.4" y="244" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Neon</text>
-    <rect x="543.8" y="224" width="143.6" height="30" rx="3" fill="#142230" stroke="#22333F"/><text x="556.8" y="244" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Telegram Bot API</text>
+    <g class="chip" style="animation-delay:5.32s"><rect x="190.0" y="224" width="48.0" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="203.0" y="244" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Git</text>
+    <g class="chip" style="animation-delay:5.60s"><rect x="246.1" y="224" width="70.1" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="259.1" y="244" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Docker</text>
+    <g class="chip" style="animation-delay:5.88s"><rect x="324.1" y="224" width="70.1" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="337.1" y="244" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Render</text>
+    <g class="chip" style="animation-delay:6.16s"><rect x="402.2" y="224" width="70.1" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="415.2" y="244" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Vercel</text>
+    <g class="chip" style="animation-delay:6.44s"><rect x="480.4" y="224" width="55.4" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="493.4" y="244" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Neon</text>
+    <g class="chip" style="animation-delay:6.72s"><rect x="543.8" y="224" width="143.6" height="30" rx="3" fill="#142230" stroke="#22333F"/></g><text x="556.8" y="244" font-family="ui-monospace,Consolas,monospace" font-size="12.5" fill="#DFE9EC">Telegram Bot API</text>
     <rect class="sweep" x="-460" y="0" width="440" height="284" fill="url(#glaze)"/>
     <rect x=".5" y=".5" width="1199" height="283" rx="13.5" fill="none" stroke="#22333F"/>
   </g>

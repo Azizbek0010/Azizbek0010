@@ -1,5 +1,7 @@
 <img src="./banner.svg" width="100%" alt="Azizbek Amangeldiev — full-stack developer building systems that go into daily use">
 
+<img src="./now.svg" width="100%" alt="Now: LevelUp Academy v1, secure payments. 14 developers led. Open to freelance work in Tashkent.">
+
 I build software that a business opens every morning and cannot get through the day
 without. That usually means roles and permissions, money that has to reconcile down to
 the last transaction, and a mobile screen for whoever is standing away from a desk.
